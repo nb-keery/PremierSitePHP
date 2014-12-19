@@ -5,6 +5,8 @@
 
 
 		// affichez "hello world" avec un echo
+		
+		echo "<p>hello world</p>";
 
 		//créer une variable nommée "salutation", assignez lui une valeur de "bonjour", et affichez la valeur de cette variable
 

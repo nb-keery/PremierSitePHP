@@ -28,4 +28,4 @@
 		//affichez avec une boucle for le nom et le sexe de chaque étudiant
 
 
-		//même exercice, mais cette fois, le nom doit être affiché dans un h1, le sexe dans un span et l'âge dans un p 
+		//même exercice, mais cette fois, le nom doit être affiché dans un h1, le sexe dans un span et l'âge dans un p  

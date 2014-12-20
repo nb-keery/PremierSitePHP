@@ -80,7 +80,11 @@
 
 
 	
-		$prenoms = Array('prenom' => 'Guillaume', 'age' => '19', 'sexe' => 'homme'); Array('prenom' => 'Gaël', 'age' => '42', 'sexe' => 'hommme'); Array('prenom' => 'Julien', 'age' =>'8', 'sexe' => 'femme');
+		$prenoms = array(
+							array('prenom' => 'Guillaume', 'age' => '19', 'sexe' => 'homme'),
+							array('prenom' => 'Gaël', 'age' => '42', 'sexe' => 'hommme'),
+							array('prenom' => 'Julien', 'age' =>'8', 'sexe' => 'femme')
+						);
 				
 				print_r ($prenoms);
 		//recréez le même array, mais ajoutez, pour chaque étudiant, un âge et un sexe

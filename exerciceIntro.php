@@ -26,13 +26,14 @@
 	<?php
 			//soustrayez 4992 à "resultat", et affichez la valeur de variable
 		$chiffre3 = 4992;
-		echo $resultat - $chiffre3;
+		echo $resultat - $chiffre3 . ' </br> ';
+		echo substr($resultat, 0, 2) ;
 		
 	?>
 		
 		
 		//affichez les seulement les deux premiers chiffres de ce résultat
-		! Pas reussi !
+	
 		
 		
 	<?php
@@ -47,7 +48,7 @@
 	?>
 		
 		
-		<?php
+	<?php
 		$prenoms = Array('Guillaume', 'Gaël', 'Julien');
 		//idem, avec une boucle foreach
 		
@@ -70,7 +71,7 @@
 		//$ligne++;
 	?>
 
-	<?php ! PAS REUSSI !
+	<?php
 		$prenoms = Array('prenom' => 'Guillaume', 'age' => '19', 'sexe' => 'homme',
 						 'prenom' => 'Gaël', 'age' => '42', 'sexe' => 'hommme',
 						 'prenom' => 'Julien', 'age' =>'8', 'sexe' => 'femme');

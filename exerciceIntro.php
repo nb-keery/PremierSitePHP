@@ -65,30 +65,31 @@
 
 		
 
-		// ! PAS REUSSI !
-		//$prenoms = Array('Guillaume', 'Gaël', 'Julien');
+		$prenoms = Array('Guillaume', 'Gaël', 'Julien');
 		//idem, avec une boucle while.
-		//$ligne = 0;
+		$ligne = 0;
 		
-		//while($ligne)
-		//{
-		//echo '<p>' . $prenoms[$ligne] . '</p>';
-		//}
-		//$ligne++;
+		count ($prenoms);
+		while($ligne < count($prenoms))
+		{
+		echo '<p>' . $prenoms[$ligne] . '</p>';
+		$ligne++;
+		}
+		
 	
 
 
 	
-		$prenoms = Array('prenom' => 'Guillaume', 'age' => '19', 'sexe' => 'homme',
-						 'prenom' => 'Gaël', 'age' => '42', 'sexe' => 'hommme',
-						 'prenom' => 'Julien', 'age' =>'8', 'sexe' => 'femme');
+		//$prenoms = Array('prenom' => 'Guillaume', 'age' => '19', 'sexe' => 'homme',
+						 //'prenom' => 'Gaël', 'age' => '42', 'sexe' => 'hommme',
+						 //'prenom' => 'Julien', 'age' =>'8', 'sexe' => 'femme');
 		//recréez le même array, mais ajoutez, pour chaque étudiant, un âge et un sexe
 		
 		
-		for($personne=0; $personne <3; $personne++)
-		{
-		echo '<p>' . $prenoms[$personne] . '</p>';
-		}
+		//for($personne=0; $personne <3; $personne++)
+		//{
+		//echo '<p>' . $prenoms[$personne] . '</p>';
+//}
 		
 
 		

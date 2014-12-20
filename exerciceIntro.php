@@ -89,19 +89,34 @@
 				print_r ($prenoms);
 		//recréez le même array, mais ajoutez, pour chaque étudiant, un âge et un sexe
 		
+		//$prenoms = Array('Guillaume', 'Gaël', 'Julien');
 		
-		//for($personne=0; $personne <3; $personne++)
-		//{
-		//echo '<p>' . $prenoms[$personne] . '</p>';
-//}
+		for ($i=0; $i <3; $i++)
+		{
+			echo '<p>'. $prenoms[$i]['age']. '</p>';
+			echo '<p>'. $prenoms[$i]['sexe']. '</p>';
+		}
 		
-
 		
-		
+		foreach ($prenoms as $value)
+		{
+			echo $value['age'] .' ' . $value['sexe'];
+		}
 		// ! PAS REUSSI !
 		//affichez avec une boucle for le nom et le sexe de chaque étudiant
 
+		$prenoms = array(
+							array('prenom' => 'Guillaume', 'age' => '19', 'sexe' => 'homme'),
+							array('prenom' => 'Gaël', 'age' => '42', 'sexe' => 'homme'),
+							array('prenom' => 'Julien', 'age' =>'8', 'sexe' => 'femme')
+						);
+		
+		foreach ($prenoms as $value)
+		{
+			echo '<h1>' . $value['prenom'] . '</h1> <span> ' . $value['age']. ' </span> <p> ' . $value['sexe']  .'</p> ';
+		}
 		// ! PAS REUSSI !
-		//même exercice, mais cette fois, le nom doit être affiché dans un h1, le sexe dans un span et l'âge dans un p  
+		//même exercice, mais cette fois, le nom doit être affiché dans un h1, 
+		//le sexe dans un span et l'âge dans un p  
 
 	?>

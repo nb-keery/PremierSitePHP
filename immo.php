@@ -39,4 +39,4 @@ $ads = array(
   array('url' => 'http://www.seloger.com/annonces/achat/appartement/paris-18eme-75/montmartre/74736067.htm','title' => 'Duplex 3 pièces 50 m² ','square_m' => '50','price' => '409000'),
   array('url' => 'http://www.seloger.com/annonces/achat/appartement/saint-denis-93/republique-gare-porte-de-paris/74748305.htm','title' => 'Studio 22 m² ','square_m' => '22','price' => '80000'),
   array('url' => 'http://www.seloger.com/annonces/locations/appartement/paris-18eme-75/clignancourt-jules-joffrin/74777173.htm','title' => 'Studio 25 m² ','square_m' => '25','price' => '790')
-);
+); 

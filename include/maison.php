@@ -43,23 +43,14 @@ $ads = array(
   array('url' => 'http://www.seloger.com/annonces/locations/appartement/paris-18eme-75/clignancourt-jules-joffrin/74777173.htm','title' => 'Studio de 25 m² ','square_m' => '25','price' => '790')
   );
 
-$louer = array(
+$louer = array();
 
 
+$acheter = array();
 
-  );
-
-
-$acheter = array(
-
-
-
-  );
-
-  for ($i=0; $i < count($ads); $i++)
-    {
-      
-      if ($ads[$i]['price'] < 1000) {
+for ($i=0; $i < count($ads); $i++)
+{
+ if ($ads[$i]['price'] < 1000) {
 
         array_push($louer, $ads[$i]);
          }

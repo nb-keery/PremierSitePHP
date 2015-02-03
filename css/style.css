@@ -13,33 +13,44 @@ header
 {
 	background-color: black;
 	width: 100%;
-	display: table;
-	min-width: 1060px;
+	min-width: 1200px;
 }
 
-header > nav
+#haut
+{
+	display: table;
+	width: 980px;
+	margin: 0 auto;
+}
+
+header > #haut > nav
 {
 	display: table-cell;
 	vertical-align: top;
+	position: relative;
 }
 
 nav > ul
 {
-	margin: 0px 0px 0px 265px;
+	margin: 0;
+	padding: 0;
+	height: 99px;
 }
 
-header > #tete
+header > #haut > #tete
 {
-	margin-left: 50px;
+	margin: 0px 0px 0px 50px;
 	height: 95px;
+	width: 500px;
+	display: table-cell;
 }
 
-header > #tete > img
+header > #haut > #tete > img
 {
 	display: inline-block;
 }
 
-header > #tete > #titre
+header > #haut > #tete > #titre
 {
 	width: 280px;
 	height: 95px;
@@ -49,28 +60,24 @@ nav > ul > li
 {
 	display: inline-block;
 	text-align: center;
-	padding: 30px 20px;
+	
 	color: rgb(255, 255, 255);
+	margin-right: -4px;
 }
 
-nav > ul > li.actif
+nav > ul > li.actif > a,
+nav > ul > li:hover > a
 {
-	padding: 30px 20px;
 	background-color: rgb(144, 144, 144);
 }
-
-nav > ul > li:hover
-{
-	padding: 30px 20px;
-	background-color: rgb(144, 144, 144);
-}
-
 
 nav > ul > li > a
 {
 	color: rgb(255, 255, 255);
 	font-family: tunga;
 	font-size: 20px;
+	padding: 32px 20px;
+	display: block;
 }
 
 section
@@ -99,6 +106,7 @@ section > p
 	font-size: 15px;
 	font-family: helvetica;
 	margin: 20px 12px 0px 12px;
+	padding-bottom: 15px;
 }
 
 #nom
@@ -155,7 +163,7 @@ button
 	border-radius: 10px;
 	color: white;
 	padding: 3px 35px;
-	margin: 0 auto;
+	margin-bottom: 25px;
 }
 
 #message
@@ -184,7 +192,7 @@ button
 	height: 200px;
 	border: 2px rgb(235, 235, 235) solid;
 	display: inline-block;
-	margin: 15px 0px 0px 90px;
+	margin: 15px 0px 20px 90px;
 	border-radius: 6px;
 	box-shadow: 1px 4px 9px #aaa;
 }
@@ -234,6 +242,7 @@ button
 	color: white;
 	padding: 3px 35px;
 	margin-left: 40px;
+	cursor: pointer;
 }
 
 #louer
@@ -243,6 +252,7 @@ button
 	color: white;
 	padding: 3px 35px;
 	margin-left: 40px;
+	cursor: pointer;
 }
 
 footer
@@ -252,54 +262,75 @@ footer
 	display: table;
 }
 
-footer > .foot
+footer > #bas 
+{
+	width: 980px;
+	margin: 0 auto;
+}
+
+footer > #bas > .foot
 {
 	width: 33%;
 	border-right: 2px solid rgb(223, 223, 223);
 	padding-top: 10px;
-	text-align: center;
 	display: table-cell;
 }
 
-footer > .foot > ul
+footer > #bas > .foot > ul
 {
 	padding-left: 0px;
-	margin: 5px 0px 3px 0px;
-
 }
 
-footer > .foot > ul > li > a
+footer > #bas > .foot > ul > #secondnav > li > a
 {
 	color: rgb(255, 255, 255); 
 }
 
 .fitre
 {
-	margin: 0px;
+	margin: 0px 0px 5px 0px;
 	color: rgb(255, 255, 255);
 	text-decoration: underline;
+	text-align: center;
 }
 
-footer > .foot > ul > li
+#foot2
 {
-	display: inline-block;
+	text-align: center;
+}
+
+footer > #bas > .foot > ul > #secondnav > li
+{
 	margin-left: 5px;
 }
 
-footer > .foot > ul > li > img
+footer > #bas > .foot > ul > li > img
 {
 	cursor:  pointer;
 }
 
-#foot1 > li
+#foot2 > li
 {
-	display: block;
+	display: inline-block;
 }
 
-footer > #foot3 > p
+#foot1
+{
+	text-align: left;
+	margin: 0 auto 0 127px;
+	width: 75px;
+}
+
+#foot3
+{
+	display: table-cell;
+	width: 33%;
+}
+
+footer > #bas > #foot3 > p
 {
 	color: rgb(255, 255, 255);
 	font-family: verdana;
 	font-size: 10px;
-	text-align: center;
+	margin: 50px 0px 0px 15px;
 }
